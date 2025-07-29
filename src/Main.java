@@ -69,6 +69,53 @@ public class Main {
         System.out.println("В школе, где " + totalClasses + " классов, нужно " + whiteCans + " банок белой краски и " + brownCans + " банок коричневой краски");
 
         System.out.println("Задание 6");
+        byte banana = 5;
+        byte oneBananaGr = 80;
+        int totalBananaGr = banana * oneBananaGr;
+        byte milk = 2;
+        byte oneMilkGr = 105;
+        int totalMilkGr = milk * oneMilkGr;
+        byte ice = 2;
+        byte oneIceGr = 100;
+        int totalIceGr = ice * oneIceGr;
+        byte eggs = 4;
+        byte oneEggsGr = 70;
+        int totalEggsGr = eggs * oneEggsGr;
+        int breakfastGr = totalBananaGr + totalMilkGr + totalIceGr + totalEggsGr;
+        System.out.println (breakfastGr + " грамм");
+        int GrPerKg = 1000;
+        float weightKg = breakfastGr / (float) GrPerKg;
+        System.out.println (weightKg + " килограмм");
 
+        System.out.println("Задание 7");
+        byte kg = 7;
+        short weightLossGr = 250;
+        short weightLossGr2 = 500;
+        int grPerKg = 1000;
+        int weightFinishGr = kg * grPerKg;
+        int finishGr1 = weightFinishGr / weightLossGr;
+        System.out.println(finishGr1 + " дней при похудении на 250 грамм");
+        int finishGr2 = weightFinishGr / weightLossGr2;
+        System.out.println(finishGr2 + " дней при похудении на 500 грамм");
+        int averageDaySum = (weightLossGr2 + weightLossGr) / 2;
+        float totalAverageDay = weightFinishGr / (float) averageDaySum;
+        System.out.printf("Дней в среднем %.1f", totalAverageDay); // попытка сокращения колличества цифр после точки, правда не понял как после вывода результата написать текст.
+
+        System.out.println();
+        System.out.println("Задание 8");
+        int masha = 67760;
+        int denis = 83690;
+        int christina = 76230;
+        float increase = 1.1F;
+        int months = 12;
+        float increaseMasha = masha * increase;
+        float increaseDenis = denis * increase;
+        float increaseChristina = christina * increase;
+        float yearDifferenceMasha = (increaseMasha * months) - (masha * months);
+        float yearDifferenceDenis = (increaseDenis * months) - (denis * months);
+        float yearDifferenceChristina = (increaseChristina * months) - (christina * months);
+        System.out.println("Маша теперь получает " + increaseMasha + " рублей. Годовой доход вырос на " + yearDifferenceMasha + " рублей" );
+        System.out.println("Денис теперь получает " + increaseDenis + " рублей. Годовой доход вырос на " + yearDifferenceDenis + " рублей" );
+        System.out.println("Маша теперь получает " + increaseChristina + " рублей. Годовой доход вырос на " + yearDifferenceChristina + " рублей" );
     }
 }
