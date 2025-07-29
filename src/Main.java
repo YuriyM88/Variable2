@@ -3,17 +3,17 @@ public class Main {
 
         System.out.println("Задание 1 ");
         byte a = 100;
-        System.out.println(a);
+        System.out.println("Значение переменной 'а' c типом 'byte' равно " + a );
         short b = 200;
-        System.out.println(b);
+        System.out.println("Значение переменной 'b' c типом 'short' равно " + b );
         int c = 400;
-        System.out.println(c);
+        System.out.println("Значение переменной 'c' c типом 'int' равно " + c );
         long d = 800;
-        System.out.println(d);
+        System.out.println("Значение переменной 'b' c типом 'long' равно " + d );
         float e = 1600.4564F;
-        System.out.println(e);
+        System.out.println("Значение переменной 'e' c типом 'float' равно " + e );
         double f = 2400.84561687d;
-        System.out.println(f);
+        System.out.println("Значение переменной 'f' c типом 'double' равно " + f );
 
         System.out.println("Задание 2 ");
         float test1 = 27.12F;
@@ -117,5 +117,7 @@ public class Main {
         System.out.println("Маша теперь получает " + increaseMasha + " рублей. Годовой доход вырос на " + yearDifferenceMasha + " рублей" );
         System.out.println("Денис теперь получает " + increaseDenis + " рублей. Годовой доход вырос на " + yearDifferenceDenis + " рублей" );
         System.out.println("Маша теперь получает " + increaseChristina + " рублей. Годовой доход вырос на " + yearDifferenceChristina + " рублей" );
+
+
     }
 }
